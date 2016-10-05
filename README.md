@@ -1,4 +1,4 @@
-# github-webhook-handler-docker
+# GitHub Webhook handler in Docker
 
 Basic Nodejs webserver to listen for GitHub Webhook requests
 
