@@ -3,9 +3,8 @@ FROM alpine:3.1
 # Update
  RUN apk add --update nodejs
 #
-# # Install app dependencies
-# replace this with your application's default port
-RUN npm install http github-webhook-handler
+
+RUN npm -g install npm@latest-2 http github-webhook-handler prettyjson colors
 ADD server.js server.js
 EXPOSE 7777
 CMD ["node", "server.js"]
