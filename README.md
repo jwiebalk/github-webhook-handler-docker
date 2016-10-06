@@ -13,7 +13,7 @@ Rather than build it yourself, the full container is available on [DockerHub](ht
 
 ```
 sudo docker pull jwiebalk/github-webhook-handler-docker
-sudo docker run -d -p 7777:7777 -e SECRET=$SHARED_SECRET jwiebalk/github-webhook-handler-docker
+sudo docker run -d -p 7777:7777 -e SECRET=$SHARED_SECRET -t jwiebalk/github-webhook-handler-docker
 ```
 
 You can then check the `docker logs $container` to see webhook status
